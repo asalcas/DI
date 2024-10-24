@@ -6,7 +6,7 @@
       "Apellidos": "Gutierrez Rodriguez",
       "SegSocial": "1111111111",
       "FNacimiento": "27/07/1974",
-      "IdMedico": 1,
+      "IdMedico": 1
     },
     {
       "Id": 3,
@@ -15,7 +15,7 @@
       "Apellidos": "Fernandez Cid",
       "SegSocial": "333333333",
       "FNacimiento": "22/03/2000",
-      "IdMedico": 2,
+      "IdMedico": 2
     },
     {
        "Id": 2,
@@ -24,6 +24,6 @@
       "Apellidos": "Ruiz Mejías",
       "SegSocial": "2222222222",
       "FNacimiento": "12/09/1986",
-      "IdMedico": 1,
+      "IdMedico": 1
     }
 ]
