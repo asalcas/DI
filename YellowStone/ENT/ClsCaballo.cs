@@ -41,10 +41,6 @@ namespace ENT
 
         #region Constructores
 
-        public ClsCaballo()
-        {
-
-        }
         public ClsCaballo(int idCaballo, string Nombre, int IdRaza)
         {
             this.idCaballo = idCaballo;

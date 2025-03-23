@@ -1,26 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\",
+  "WorkspaceRootPath": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|c:\\users\\alvaro.salvador\\desktop\\github\\di\\yellowstone\\ent\\clsraza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|solutionrelative:ent\\clsraza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\bl\\clsrazabl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|solutionrelative:bl\\clsrazabl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|c:\\users\\alvaro.salvador\\desktop\\github\\di\\yellowstone\\ent\\clscaballo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|solutionrelative:ent\\clscaballo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\bl\\clscaballobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|solutionrelative:bl\\clscaballobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|c:\\users\\alvaro.salvador\\desktop\\github\\di\\yellowstone\\bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|solutionrelative:bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|c:\\users\\alvaro.salvador\\desktop\\github\\di\\yellowstone\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\dal\\clsrazadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|solutionrelative:dal\\clsrazadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|c:\\users\\alvaro.salvador\\desktop\\github\\di\\yellowstone\\bl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A6F64EB-F435-4C72-8895-37FD9A45AC28}|BL\\BL.csproj|solutionrelative:bl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\dal\\clscaballodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|solutionrelative:dal\\clscaballodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\ent\\clscaballo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|solutionrelative:ent\\clscaballo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\ent\\clsraza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E39F0B9D-5FE2-4700-B974-D498718E497D}|ENT\\ENT.csproj|solutionrelative:ent\\clsraza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|c:\\users\\alvar\\desktop\\github\\di\\yellowstone\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD30161C-D245-4CDB-9DB3-8DA079FBC146}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +42,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClsRazaBL.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\BL\\ClsRazaBL.cs",
+              "RelativeDocumentMoniker": "BL\\ClsRazaBL.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\BL\\ClsRazaBL.cs",
+              "RelativeToolTip": "BL\\ClsRazaBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:43:11.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClsRazaDAL.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\ClsRazaDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ClsRazaDAL.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\ClsRazaDAL.cs",
+              "RelativeToolTip": "DAL\\ClsRazaDAL.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:57:52.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClsCaballoDAL.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\ClsCaballoDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ClsCaballoDAL.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\ClsCaballoDAL.cs",
+              "RelativeToolTip": "DAL\\ClsCaballoDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:42:58.111Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -46,26 +97,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ClsRaza.cs",
-              "DocumentMoniker": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsRaza.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsRaza.cs",
               "RelativeDocumentMoniker": "ENT\\ClsRaza.cs",
-              "ToolTip": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsRaza.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsRaza.cs",
               "RelativeToolTip": "ENT\\ClsRaza.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T12:34:12.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ClsCaballo.cs",
-              "DocumentMoniker": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsCaballo.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsCaballo.cs",
               "RelativeDocumentMoniker": "ENT\\ClsCaballo.cs",
-              "ToolTip": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsCaballo.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\ENT\\ClsCaballo.cs",
               "RelativeToolTip": "ENT\\ClsCaballo.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T12:33:52.317Z",
               "EditorCaption": ""
@@ -74,37 +125,40 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "BL.csproj",
-              "DocumentMoniker": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\BL\\BL.csproj",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\BL\\BL.csproj",
               "RelativeDocumentMoniker": "BL\\BL.csproj",
-              "ToolTip": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\BL\\BL.csproj",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\BL\\BL.csproj",
               "RelativeToolTip": "BL\\BL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-20T12:32:41.569Z"
+              "WhenOpened": "2025-03-20T12:32:41.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "DAL.csproj",
-              "DocumentMoniker": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\DAL.csproj",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\DAL.csproj",
               "RelativeDocumentMoniker": "DAL\\DAL.csproj",
-              "ToolTip": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\DAL.csproj",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\DAL\\DAL.csproj",
               "RelativeToolTip": "DAL\\DAL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-20T12:32:33.039Z"
+              "WhenOpened": "2025-03-20T12:32:33.039Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\BL\\Class1.cs",
-              "RelativeDocumentMoniker": "BL\\Class1.cs",
-              "ToolTip": "C:\\Users\\alvaro.salvador\\Desktop\\GitHub\\DI\\YellowStone\\BL\\Class1.cs",
-              "RelativeToolTip": "BL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ClsCaballoBL.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\BL\\ClsCaballoBL.cs",
+              "RelativeDocumentMoniker": "BL\\ClsCaballoBL.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\GitHub\\DI\\YellowStone\\BL\\ClsCaballoBL.cs",
+              "RelativeToolTip": "BL\\ClsCaballoBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T12:32:13.165Z"
+              "WhenOpened": "2025-03-20T12:32:13.165Z",
+              "EditorCaption": ""
             }
           ]
         }

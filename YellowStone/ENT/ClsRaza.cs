@@ -15,10 +15,6 @@ namespace ENT
 
         #region Constructor
 
-        public ClsRaza()
-        {
-
-        }
         public ClsRaza(int idRaza, String nombre)
         {
             this.IdRaza = idRaza;
