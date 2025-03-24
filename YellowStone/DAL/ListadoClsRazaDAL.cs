@@ -7,7 +7,7 @@ using ENT;
 
 namespace DAL
 {
-    public class ClsRazaDAL
+    public class ListadoClsRazaDAL
     {
 
         public static List<ClsRaza> listaCompletaClsRazaDAL = new List<ClsRaza>()
@@ -21,7 +21,12 @@ namespace DAL
             new ClsRaza(6, "Cortador")
         };
 
-        
+        /// <summary>
+        /// Esta funcion estática devolvera el atributo privado 'listaCompletaClsRazaDAL' 
+        /// Pre: None
+        /// Post: None
+        /// </summary>
+        /// <returns>listaCompletaClsRazaDAL</returns>
         public static List<ClsRaza> ObtenerListaCompletaClsRazaDAL()
         {
             return listaCompletaClsRazaDAL;

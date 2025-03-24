@@ -40,6 +40,10 @@ namespace ENT
         #endregion
 
         #region Constructores
+        public ClsCaballo()
+        {
+            // Esto es necesario si en nuestra aplicación queremos por ejemplo editar un Objeto tipo caballo.
+        }
 
         public ClsCaballo(int idCaballo, string Nombre, int IdRaza)
         {
@@ -48,6 +52,6 @@ namespace ENT
             this.IdRaza = IdRaza;
         }
 
-
+        #endregion
     }
 }

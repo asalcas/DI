@@ -10,11 +10,16 @@ namespace BL
 {
     public class ClsRazaBL
     {
-        public static List<ClsRaza> ListaCompletaClsRazasBL = ClsRazaDAL.ObtenerListaCompletaClsRazaDAL();
 
+        /// <summary>
+        /// Obtiene de la capa DAL un devolverá un listado completo de Razas con las reglas de negocio aplicadas
+        /// Pre: None
+        /// Post: None
+        /// </summary>
+        /// <returns>ListaCompletaClsRazasBL</returns>
         public List<ClsRaza> obtenerListaCompletaClsRazasBL()
         {
-            return ListaCompletaClsRazasBL;
+            return ListadoClsRazaDAL.ObtenerListaCompletaClsRazaDAL();
         }
     }
 }

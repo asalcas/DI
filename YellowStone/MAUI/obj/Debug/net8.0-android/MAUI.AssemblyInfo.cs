@@ -14,12 +14,12 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0197b63ae3b7c7fb897fc270cf2a2c26a9492db5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e868b5d48701e268652808cd350db7de2a27a21c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("android0.0")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("android21.0")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Android34.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Android21.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 
