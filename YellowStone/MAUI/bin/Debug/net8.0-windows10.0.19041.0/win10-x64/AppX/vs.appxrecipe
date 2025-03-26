@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-03-26T20:56:43.856</Modified>
+      <Modified>2025-03-26T23:33:03.154</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MAUI.dll">
       <PackagePath>MAUI.dll</PackagePath>
-      <Modified>2025-03-26T20:56:43.563</Modified>
+      <Modified>2025-03-26T23:33:02.827</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MAUI.exe</PackagePath>
-      <Modified>2025-03-26T20:56:43.565</Modified>
+      <Modified>2025-03-26T23:33:02.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\MAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -575,15 +575,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\BL\bin\Debug\net8.0\BL.dll">
       <PackagePath>BL.dll</PackagePath>
-      <Modified>2025-03-26T20:56:41.038</Modified>
+      <Modified>2025-03-26T22:56:21.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\DAL\bin\Debug\net8.0\DAL.dll">
       <PackagePath>DAL.dll</PackagePath>
-      <Modified>2025-03-26T20:56:40.834</Modified>
+      <Modified>2025-03-26T22:56:21.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\Desktop\DAM\DI\YellowStone\ENT\bin\Debug\net8.0\ENT.dll">
       <PackagePath>ENT.dll</PackagePath>
-      <Modified>2025-03-26T20:56:40.633</Modified>
+      <Modified>2025-03-26T22:56:20.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alvar\.nuget\packages\microsoft.maui.controls.compatibility\8.0.82\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

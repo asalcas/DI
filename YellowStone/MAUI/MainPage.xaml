@@ -23,8 +23,7 @@
                         <Frame Padding="10"
                                        Margin="5"
                                        BorderColor="#E0E0E0"
-                                       BackgroundColor="White"
-                                       InputTransparent="False">
+                                       BackgroundColor="White">
                             <HorizontalStackLayout Spacing="10">
                                 <Label Text="{Binding Nombre}"
                                     TextColor="#212121"
@@ -38,7 +37,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-
+            <Button Margin="0,10, 0, 10" Text="Guardar" FontSize="Medium" FontAttributes="Bold" BackgroundColor="PaleVioletRed"></Button>
 
         </VerticalStackLayout>
     </ScrollView>
