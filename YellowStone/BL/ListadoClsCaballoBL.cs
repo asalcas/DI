@@ -12,7 +12,7 @@ namespace BL
         /// Post: None
         /// </summary>
         /// <returns></returns>
-        public List<ClsCaballo> ObtenerListaClsCaballoCompletaBl()
+        public static List<ClsCaballo> ObtenerListaClsCaballoCompletaBl()
         {
             return ListadoClsCaballoDAL.ObtenerListaClsCaballoCompletaDAL();
         }

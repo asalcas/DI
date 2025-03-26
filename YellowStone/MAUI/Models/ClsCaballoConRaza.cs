@@ -8,29 +8,29 @@ using System.Threading.Tasks;
 
 namespace MAUI.Models
 {
-    public class ClsCaballoConRaza : ClsCaballo
+    public class ClsCaballoConRazas : ClsCaballo
     {
         #region Atributos
-        private List<ClsRaza> listadoRazas;
-        private ClsRaza razaSelected;
+        public List<ClsRaza> ListadoRazas { get; }
+        public ClsRaza RazaSelected { get; set; }
 
         #endregion
-
+        /*
         #region Propiedades
         public List<ClsRaza> ListadoRazas
         {
             get { return listadoRazas; }
         }
         #endregion
-
+        */
         #region Constructores
 
-        public ClsCaballoConRaza(ClsCaballo caballo, List<ClsRaza> listadoRazas)
+        public ClsCaballoConRazas(ClsCaballo caballo, List<ClsRaza> listadoRazas, ClsRaza razaSeleccionada = null) 
+            : base(caballo.IdCaballo, caballo.Nombre, caballo.IdRaza)
         {
-            this.Nombre = caballo.Nombre;
-            //this.IdCaballo = caballo.IdCaballo;
-            this.listadoRazas = listadoRazas;
-
+            
+            this.ListadoRazas = listadoRazas;
+            this.RazaSelected = razaSeleccionada;
         }
 
         #endregion

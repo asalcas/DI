@@ -10,7 +10,7 @@ namespace ENT
     {
         #region propiedades
         public int IdRaza { get; }
-        public String Nombre { get; set; }
+        public String NombreRaza { get; set; }
         #endregion
 
         #region Constructor
@@ -22,7 +22,7 @@ namespace ENT
         public ClsRaza(int idRaza, String nombre)
         {
             this.IdRaza = idRaza;
-            this.Nombre = nombre;
+            this.NombreRaza = nombre;
         }
         #endregion
 

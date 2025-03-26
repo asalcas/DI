@@ -8,33 +8,15 @@ namespace ENT
 {
     public class ClsCaballo
     {
-        #region Atributos
+        /*#region Atributos
 
         private int idCaballo;
 
         #endregion
-
+        */
         #region Propiedades
-        
-         public int IdCaballo
-        {
-            get
-            {
-                return idCaballo;
-            }
 
-        }
-        // EL Equivalente para java seria: 
-
-        //public int getIdCaballo()
-        //{
-        //    return idCaballo;
-        //}
-
-        
-
-        // PROPIEDAD AUTOIMPLEMENTADA
-
+        public int IdCaballo { get; }
         public string Nombre { get; set; } // El unico inconveniente de esto, es que no podemos meter codigo dentro
         public int IdRaza { get; set; }
         #endregion
@@ -42,12 +24,12 @@ namespace ENT
         #region Constructores
         public ClsCaballo()
         {
-            // Esto es necesario si en nuestra aplicación queremos por ejemplo editar un Objeto tipo caballo.
+            // Esto es necesario si en nuestra aplicación queremos por ejemplo hacer una busqueda de un Objeto tipo caballo.
         }
 
         public ClsCaballo(int idCaballo, string Nombre, int IdRaza)
         {
-            this.idCaballo = idCaballo;
+            this.IdCaballo = idCaballo;
             this.Nombre = Nombre;
             this.IdRaza = IdRaza;
         }
