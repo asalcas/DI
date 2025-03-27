@@ -12,23 +12,23 @@ namespace MAUI.ViewModels
 {
     public class ListaClsCaballoConRazas
     {
-        public ObservableCollection<ClsCaballoConRazas> listadoCaballosConListaRazas { get; }
+        public ObservableCollection<ClsCaballoConRazas> ListadoCaballosConListaRazas { get; }
         
 
 
         /// <summary>
-        /// Constructor de ListaClsCaballoConRazas rellenando un ObservableCollection con objetos ClsCaballoConRazas
+        /// Constructor de 'ListaClsCaballoConRazas' rellenando un ObservableCollection con objetos ClsCaballoConRazas
         /// </summary>
         public ListaClsCaballoConRazas()
         {
             List<ClsCaballo> listadoCaballos = ListadoClsCaballoBL.ObtenerListaClsCaballoCompletaBl();
             List<ClsRaza> listadoRazas = ListadoClsRazaBL.ObtenerListaCompletaClsRazasBL();
-            listadoCaballosConListaRazas = new ObservableCollection<ClsCaballoConRazas>();
+            ListadoCaballosConListaRazas = new ObservableCollection<ClsCaballoConRazas>();
 
             foreach (ClsCaballo caballo in listadoCaballos)
             {
                 ClsCaballoConRazas nuevoCaballo = new ClsCaballoConRazas(caballo, listadoRazas);
-                listadoCaballosConListaRazas.Add(nuevoCaballo);
+                ListadoCaballosConListaRazas.Add(nuevoCaballo);
             }
 
         }

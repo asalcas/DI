@@ -17,7 +17,7 @@
             Spacing="25">
 
             <Label Text="Lista de Caballos con Lista de Razas: " HorizontalOptions="Center" FontSize="Header"/>
-            <CollectionView ItemsSource="{Binding listadoCaballosConListaRazas}">
+            <CollectionView ItemsSource="{Binding ListadoCaballosConListaRazas}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate> <!-- Plantilla para todos los elementos de la lista-->
                         <Frame Padding="10"

@@ -30,7 +30,7 @@ namespace MAUI.Models
         /// </summary>
         /// <param name="caballo"></param>
         /// <param name="listadoRazas"></param>
-        public ClsCaballoConRazas(ClsCaballo caballo, List<ClsRaza> listadoRazas) //ClsRaza razaSeleccionada = null) 
+        public ClsCaballoConRazas(ClsCaballo caballo, List<ClsRaza> listadoRazas)// ClsRaza razaSeleccionada = null) 
             : base(caballo.IdCaballo, caballo.Nombre, caballo.IdRaza)
         {
             
