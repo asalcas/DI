@@ -12,7 +12,6 @@ namespace DAL
 
         public static List<ClsRaza> listaCompletaClsRazaDAL = new List<ClsRaza>()
         {
-            new ClsRaza(0,"--- SELECCIONA UNA RAZA ---"), // creo que hace falta para la vista poner esta
             new ClsRaza(1, "Mustang"),
             new ClsRaza(2, "Paint Horse"),
             new ClsRaza(3, "Rocky Mountain"),

@@ -21,15 +21,27 @@ namespace MAUI.ViewModels
         /// </summary>
         public ListaClsCaballoConRazas()
         {
-            List<ClsCaballo> listadoCaballos = ListadoClsCaballoBL.ObtenerListaClsCaballoCompletaBl();
-            List<ClsRaza> listadoRazas = ListadoClsRazaBL.ObtenerListaCompletaClsRazasBL();
-            ListadoCaballosConListaRazas = new ObservableCollection<ClsCaballoConRazas>();
-
-            foreach (ClsCaballo caballo in listadoCaballos)
+            try
             {
-                ClsCaballoConRazas nuevoCaballo = new ClsCaballoConRazas(caballo, listadoRazas);
-                ListadoCaballosConListaRazas.Add(nuevoCaballo);
+                List<ClsCaballo> listadoCaballos = ListadoClsCaballoBL.ObtenerListaClsCaballoCompletaBl();
+                List<ClsRaza> listadoRazas = ListadoClsRazaBL.ObtenerListaCompletaClsRazasBL();
+                ListadoCaballosConListaRazas = new ObservableCollection<ClsCaballoConRazas>();
+
+                // Creamos una raza Predeterminada para poder introducir 
+                ClsRaza razaPredeterminada = new ClsRaza(0, "--- SELECCIONA UNA RAZA ---");
+
+                listadoRazas.Insert(0, razaPredeterminada);
+                foreach (ClsCaballo caballo in listadoCaballos)
+                {
+                    ClsCaballoConRazas nuevoCaballo = new ClsCaballoConRazas(caballo, listadoRazas);
+                    ListadoCaballosConListaRazas.Add(nuevoCaballo);
+                }
             }
+            catch (Exception e)
+            {
+                // TODO Avisar al usuario mediante un DisplayAlert que ha ocurrido un error
+            }
+            
 
         }
     }

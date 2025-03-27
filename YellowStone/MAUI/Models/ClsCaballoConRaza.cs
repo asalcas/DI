@@ -33,11 +33,20 @@ namespace MAUI.Models
         public ClsCaballoConRazas(ClsCaballo caballo, List<ClsRaza> listadoRazas)// ClsRaza razaSeleccionada = null) 
             : base(caballo.IdCaballo, caballo.Nombre, caballo.IdRaza)
         {
-            
-            this.ListadoRazas = listadoRazas;
-            this.RazaSelected = listadoRazas[0];// para mostrar Selecciona una raza, antes estaba vacío no se que prefiere
-        }
 
-        #endregion
+            this.ListadoRazas = listadoRazas;
+
+            if (caballo.IdRaza == 0)
+            {
+                this.RazaSelected = listadoRazas[0];// para mostrar Selecciona una raza, antes estaba vacío no se que prefiere
+
+            }
+            else
+            {
+                this.RazaSelected = listadoRazas.Find(r => r.IdRaza == caballo.IdRaza);
+            }
+
+            #endregion
+        }
     }
 }
