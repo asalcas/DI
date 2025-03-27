@@ -15,6 +15,10 @@ namespace MAUI.ViewModels
         public ObservableCollection<ClsCaballoConRazas> listadoCaballosConListaRazas { get; }
         
 
+
+        /// <summary>
+        /// Constructor de ListaClsCaballoConRazas rellenando un ObservableCollection con objetos ClsCaballoConRazas
+        /// </summary>
         public ListaClsCaballoConRazas()
         {
             List<ClsCaballo> listadoCaballos = ListadoClsCaballoBL.ObtenerListaClsCaballoCompletaBl();

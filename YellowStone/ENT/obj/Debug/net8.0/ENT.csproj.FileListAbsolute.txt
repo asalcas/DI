@@ -10,3 +10,15 @@ C:\Users\alvar\Desktop\DAM\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.dll
 C:\Users\alvar\Desktop\DAM\DI\YellowStone\ENT\obj\Debug\net8.0\refint\ENT.dll
 C:\Users\alvar\Desktop\DAM\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.pdb
 C:\Users\alvar\Desktop\DAM\DI\YellowStone\ENT\obj\Debug\net8.0\ref\ENT.dll
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\bin\Debug\net8.0\ENT.deps.json
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\bin\Debug\net8.0\ENT.dll
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\bin\Debug\net8.0\ENT.pdb
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.AssemblyInfoInputs.cache
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.AssemblyInfo.cs
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.csproj.CoreCompileInputs.cache
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.sourcelink.json
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.dll
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\refint\ENT.dll
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ENT.pdb
+C:\Users\alvaro.salvador\Desktop\GitHub\DI\YellowStone\ENT\obj\Debug\net8.0\ref\ENT.dll

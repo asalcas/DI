@@ -25,12 +25,17 @@ namespace MAUI.Models
         */
         #region Constructores
 
-        public ClsCaballoConRazas(ClsCaballo caballo, List<ClsRaza> listadoRazas, ClsRaza razaSeleccionada = null) 
+        /// <summary>
+        /// Constructor de objeto 'ClsCaballoConRazas' al que le pasamos un objeto caballo y una lista de razas para crearlo.
+        /// </summary>
+        /// <param name="caballo"></param>
+        /// <param name="listadoRazas"></param>
+        public ClsCaballoConRazas(ClsCaballo caballo, List<ClsRaza> listadoRazas) //ClsRaza razaSeleccionada = null) 
             : base(caballo.IdCaballo, caballo.Nombre, caballo.IdRaza)
         {
             
             this.ListadoRazas = listadoRazas;
-            this.RazaSelected = razaSeleccionada;
+            this.RazaSelected = listadoRazas[0];// para mostrar Selecciona una raza, antes estaba vacío no se que prefiere
         }
 
         #endregion

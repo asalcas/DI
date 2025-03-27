@@ -23,7 +23,7 @@ namespace DAL
 
             while(afectado != 1 && indice < ListadoClsCaballoDAL.listaClsCaballoCompletaDAL.Count())
             {
-                
+                // hacer el actualizar
             }
 
            

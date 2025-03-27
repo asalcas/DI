@@ -22,7 +22,7 @@
                     <DataTemplate> <!-- Plantilla para todos los elementos de la lista-->
                         <Frame Padding="10"
                                        Margin="5"
-                                       BorderColor="#E0E0E0"
+                                       BorderColor="#E0E0E0" 
                                        BackgroundColor="White">
                             <HorizontalStackLayout Spacing="10">
                                 <Label Text="{Binding Nombre}"
@@ -30,7 +30,8 @@
                                     FontSize="Medium"
                                     FontAttributes="Bold"/>
                                 <!-- ItemsSource coge la lista de razas, el selected es el que tenemos como null al principio, y el ItemDisplayBinding de la lista coge los Nombres de los elementos-->
-                                <Picker ItemsSource="{Binding ListadoRazas}" SelectedItem="{Binding RazaSelected}" ItemDisplayBinding="{Binding NombreRaza}"></Picker>
+                                <Picker ItemsSource="{Binding ListadoRazas}" SelectedItem="{Binding RazaSelected}" 
+                                        ItemDisplayBinding="{Binding NombreRaza}" ></Picker>
                             </HorizontalStackLayout>
                         </Frame>
                     </DataTemplate>
