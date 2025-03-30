@@ -19,6 +19,7 @@ namespace BL
         /// <returns></returns>
         public static int actualizarRazaCaballoBL(int idCaballo, int idRaza)
         {
+
             return ManejadoraDAL.actualizarListaCaballos(idCaballo, idRaza);
         }
     }

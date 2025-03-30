@@ -9,7 +9,7 @@ namespace DAL
     public class ManejadoraDAL
     {
         /// <summary>
-        /// Esta función actualzia la raza de un caballo del listado
+        /// Esta función actualiza la raza de un caballo del listado
         /// Pre: Los idCaballo e idRaza deben existir en el listado
         /// Post: Nos devolvera un 0 o un 1
         /// </summary>
@@ -23,7 +23,11 @@ namespace DAL
 
             while(afectado != 1 && indice < ListadoClsCaballoDAL.listaClsCaballoCompletaDAL.Count())
             {
-                // hacer el actualizar
+                if (ListadoClsCaballoDAL.listaClsCaballoCompletaDAL[indice].IdCaballo == idCaballo)
+                {
+                    ListadoClsCaballoDAL.listaClsCaballoCompletaDAL[indice].IdRaza = idRaza;
+                    afectado++;
+                }
             }
 
            
