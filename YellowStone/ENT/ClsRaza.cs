@@ -19,6 +19,10 @@ namespace ENT
         {
 
         }
+        public ClsRaza(int idRaza)
+        {
+            this.IdRaza = idRaza;
+        }
         public ClsRaza(int idRaza, String nombre)
         {
             this.IdRaza = idRaza;

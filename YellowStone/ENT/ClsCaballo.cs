@@ -26,7 +26,10 @@ namespace ENT
         {
             // Esto es necesario si en nuestra aplicación queremos por ejemplo hacer una busqueda de un Objeto tipo caballo.
         }
-
+        public ClsCaballo(int id)
+        {
+            this.IdCaballo = id;
+        }
         public ClsCaballo(int idCaballo, string Nombre, int IdRaza)
         {
             this.IdCaballo = idCaballo;
