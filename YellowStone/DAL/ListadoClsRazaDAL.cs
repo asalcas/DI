@@ -37,11 +37,17 @@ namespace DAL
                     while (miLector.Read())
                     {
                         ClsRaza raza = new ClsRaza((int)miLector["IdRaza"]);
-                        raza.NombreRaza = (String)miLector["NombreRaza"];
+
+                        if (miLector["NombreRaza"] != DBNull.Value)
+                        {
+                            raza.NombreRaza = (String)miLector["NombreRaza"];
+                        }
                         listadoRazas.Add(raza);
                     }
 
                 }
+                miLector.Close();
+                ClsConexion.cerrarConexion(ref conexion);
             }
             catch (SqlException e)
             {

@@ -21,12 +21,14 @@ namespace DAL
             bool encontrado = false;
             int numFilasAfectadas = 0;
             int indice = 0;
+            List<ClsCaballo> listadoCaballosCompletoDal = ListadoClsCaballoDAL.listaClsCaballoCompletaDAL();
 
-            while(!encontrado && indice <ListadoClsCaballoDAL.listaClsCaballoCompletaDAL.Count())
+            while(!encontrado && indice < listadoCaballosCompletoDal.Count())
             {
-                if (ListadoClsCaballoDAL.listaClsCaballoCompletaDAL[indice].IdCaballo == idCaballo)
+                if (listadoCaballosCompletoDal[indice].IdCaballo == idCaballo)
                 {
-                    ListadoClsCaballoDAL.listaClsCaballoCompletaDAL[indice].IdRaza = idRaza;
+                    listadoCaballosCompletoDal[indice].IdRaza = idRaza;
+
                     numFilasAfectadas++;
                     encontrado = true;
                 }

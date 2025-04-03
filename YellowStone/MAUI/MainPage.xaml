@@ -39,10 +39,11 @@
                                 <Label Text="{Binding Nombre}"
                                     TextColor="#212121"
                                     FontSize="Medium"
-                                    FontAttributes="Bold"/>
+                                    FontAttributes="Bold"
+                                    HorizontalTextAlignment="Start"/>
                                 <!-- ItemsSource coge la lista de razas, el selected es el que tenemos como null al principio, y el ItemDisplayBinding de la lista coge los Nombres de los elementos-->
                                 <Picker ItemsSource="{Binding ListadoRazas}" SelectedItem="{Binding RazaSelected}" 
-                                        ItemDisplayBinding="{Binding NombreRaza}" ></Picker>
+                                        ItemDisplayBinding="{Binding NombreRaza}" VerticalOptions="Center" HorizontalOptions="EndAndExpand" ></Picker>
                             </HorizontalStackLayout>
                         </Frame>
                     </DataTemplate>

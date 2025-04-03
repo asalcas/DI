@@ -1,11 +1,17 @@
 ﻿using ENT;
 using Microsoft.Data.SqlClient;
+using System.Collections.Generic;
+using System.Data;
 
 namespace DAL
 {
     public class ListadoClsCaballoDAL
     {
 
+        /// <summary>
+        /// Función que va a realizar una consulta SQL a la Base de datos donde sacaremos una lista completa de Caballos
+        /// </summary>
+        /// <returns></returns>
         public static List<ClsCaballo> listaClsCaballoCompletaDAL()
         {
             /*new ClsCaballo(11, "Blue Note", 0),
@@ -35,8 +41,16 @@ namespace DAL
                     while (miLector.Read())
                     {
                         ClsCaballo caballoNuevo = new ClsCaballo((int)miLector["IdCaballo"]);
-                        caballoNuevo.Nombre = (String)miLector["NombreCaballo"];
-                        caballoNuevo.IdRaza = (int)miLector["IdRaza"];
+                        if (miLector["NombreCaballo"] != DBNull.Value)
+                        {
+                            caballoNuevo.Nombre = (String)miLector["NombreCaballo"];
+
+                        }
+                        if (miLector["IdRaza"] != DBNull.Value)
+                        {
+                            caballoNuevo.IdRaza = (int)miLector["IdRaza"];
+
+                        }
                         listadoCaballos.Add(caballoNuevo);
                     }
                 }
@@ -50,6 +64,44 @@ namespace DAL
             }
 
             return listadoCaballos;
+        }
+
+
+        public static List<ClsCaballo> editarUnCaballo(int idCaballo, int idRaza)
+        {
+            List<ClsCaballo> listadoCaballo = new List<ClsCaballo>();
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand miComando = new SqlCommand();
+            miComando.Parameters.Add("@IdCaballo", SqlDbType.Int).Value = idCaballo;
+            miComando.Parameters.Add("@IdRaza", SqlDbType.Int).Value = idRaza;
+
+
+            SqlDataReader miLector;
+
+            try
+            {
+                conexion = ClsConexion.abrirConexion();
+                miComando.CommandText = "UPDATE ClsCaballos SET IdRaza = @IdRaza WHERE IdCaballo = @IdCaballo;";
+                miComando.Connection = conexion;
+                miLector = miComando.ExecuteReader();
+
+                if (miLector.HasRows)
+                {
+                    while (miLector.Read())
+                    {
+             
+
+                    }
+                }
+
+
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+
+
         }
 
         /// <summary>
@@ -72,7 +124,9 @@ namespace DAL
         /// <returns></returns>
         public static ClsCaballo ObtenerCaballoPorID(int id)
         {
-            return listaClsCaballoCompletaDAL.Find(caballo => caballo.IdCaballo == id);
+            List<ClsCaballo> listaCaballosBusqueda = listaClsCaballoCompletaDAL();
+
+            return listaCaballosBusqueda.Find(caballo => caballo.IdCaballo == id);
 
         }
     }
