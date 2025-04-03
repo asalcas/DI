@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ViewModels.utils;
 
+
 namespace MAUI.ViewModels
 {
     public class ListaClsCaballoConRazasVM  
@@ -43,17 +44,16 @@ namespace MAUI.ViewModels
             }
             catch (Exception e)
             {
-                // TODO Avisar al usuario mediante un DisplayAlert que ha ocurrido un error
+
+                muestraMensajes("Error!", "No se pudo obtener los datos necesarios :(", "Ok");
+
             }
             
 
         }
 
 
-
         #region Métodos
-
-
 
         #endregion
         #region Comandos
@@ -61,19 +61,37 @@ namespace MAUI.ViewModels
         private async void actualizar_execute()
         {
             // TODO: Código que se encargará de recorrer la lista para actualizar las razas
+            int filasTotalesafectadas = 0;
             int numFilasAfectadas = 0;
 
             foreach(ClsCaballoConRazas caballo in ListadoCaballosConListaRazas)
             {
                 if(caballo.IdRaza != caballo.RazaSelected.IdRaza && caballo.RazaSelected.IdRaza != 0)
                 {
-      
-                    numFilasAfectadas += ManejadoraBL.actualizarRazaCaballoBL(caballo.IdCaballo, caballo.RazaSelected.IdRaza);
+                    try
+                    {
+                        numFilasAfectadas = ManejadoraBL.actualizarRazaCaballoBL(caballo.IdCaballo, caballo.RazaSelected.IdRaza);
+                    }
+                    catch (Exception e)
+                    {
+                        muestraMensajes("Error al conectar a la Base de Datos", "Intentelo más tarde", "Entendido");
+                    }
+                    
+                    if (numFilasAfectadas == 1)
+                    {
+                        caballo.IdRaza = caballo.RazaSelected.IdRaza;
+                        filasTotalesafectadas++;
+                    }
                 }
             }
 
-           await Shell.Current.DisplayAlert("Operación realizada!",$"El número de filas afectadas es de: {numFilasAfectadas}","Confirmar");
+           await Shell.Current.DisplayAlert("Operación realizada!",$"El número de filas afectadas es de: {filasTotalesafectadas}","Confirmar");
+            //TODO: Actualizar la lista de ClsCaballos otra vez
         }
         #endregion
+        public async void muestraMensajes(String cabecera, String mensaje, String confirmacion)
+        {
+            await Shell.Current.DisplayAlert(cabecera, mensaje, confirmacion);
+        }
     }
 }
