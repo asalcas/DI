@@ -15,14 +15,6 @@ namespace MAUI.Models
         public ClsRaza RazaSelected { get; set; }
 
         #endregion
-        /*
-        #region Propiedades
-        public List<ClsRaza> ListadoRazas
-        {
-            get { return listadoRazas; }
-        }
-        #endregion
-        */
         #region Constructores
 
         /// <summary>

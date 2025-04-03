@@ -66,15 +66,25 @@ namespace DAL
             return listadoCaballos;
         }
 
-
-        public static List<ClsCaballo> editarUnCaballo(int idCaballo, int idRaza)
+        /// <summary>
+        /// Función que editará los caballos seleccionados en la vista mediante una Query SQL. Devuelve una Tupla
+        /// Tipos de la tupla: 
+        /// - List<ClsCaballo>
+        /// - int 'filasAfectadasActualización'
+        /// Pre: 'idCaballo' y 'idRaza' deben de existir en nuestra BD
+        /// Post: El listado que devuelve, es uno actualizado como estaría en la BD
+        /// </summary>
+        /// <param name="idCaballo"></param>
+        /// <param name="idRaza"></param>
+        /// <returns>(filasAfectadasActualizacion, listadoCaballo)</returns>
+        public static (int, List<ClsCaballo>) editarUnCaballo(int idCaballo, int idRaza)
         {
             List<ClsCaballo> listadoCaballo = new List<ClsCaballo>();
             SqlConnection conexion = new SqlConnection();
             SqlCommand miComando = new SqlCommand();
             miComando.Parameters.Add("@IdCaballo", SqlDbType.Int).Value = idCaballo;
             miComando.Parameters.Add("@IdRaza", SqlDbType.Int).Value = idRaza;
-
+            int filasAfectadasActualizacion;
 
             SqlDataReader miLector;
 
@@ -83,17 +93,23 @@ namespace DAL
                 conexion = ClsConexion.abrirConexion();
                 miComando.CommandText = "UPDATE ClsCaballos SET IdRaza = @IdRaza WHERE IdCaballo = @IdCaballo;";
                 miComando.Connection = conexion;
-                miLector = miComando.ExecuteReader();
 
-                if (miLector.HasRows)
+                filasAfectadasActualizacion = miComando.ExecuteNonQuery();
+                
+                if (filasAfectadasActualizacion > 0)
                 {
-                    while (miLector.Read())
-                    {
-             
+                    listadoCaballo = listaClsCaballoCompletaDAL();
 
+                    foreach(ClsCaballo caballo in listadoCaballo)
+                    {
+                        if(caballo.IdCaballo == idCaballo)
+                        {
+                            caballo.IdRaza = idRaza;
+
+                        }
                     }
                 }
-
+                ClsConexion.cerrarConexion(ref conexion);
 
             }
             catch (SqlException e)
@@ -101,6 +117,7 @@ namespace DAL
                 throw e;
             }
 
+            return (filasAfectadasActualizacion, listadoCaballo);
 
         }
 

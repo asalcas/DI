@@ -16,7 +16,7 @@ namespace DAL
         /// <param name="idCaballo"></param>
         /// <param name="idRaza"></param>
         /// <returns></returns>
-        public static int actualizarListaCaballos(int idCaballo, int idRaza)
+        public static int actualizarListaCaballosListado(int idCaballo, int idRaza)
         {
             bool encontrado = false;
             int numFilasAfectadas = 0;

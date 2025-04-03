@@ -1,6 +1,7 @@
 ﻿using BL;
 using ENT;
 using MAUI.Models;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -58,19 +59,30 @@ namespace MAUI.ViewModels
         #endregion
         #region Comandos
 
-        private async void actualizar_execute()
+        private void actualizar_execute()
         {
             // TODO: Código que se encargará de recorrer la lista para actualizar las razas
             int filasTotalesafectadas = 0;
             int numFilasAfectadas = 0;
+            List<ClsCaballo> listadoCaballos = new();
+            List<ClsRaza> listadoRazas = new();
 
-            foreach(ClsCaballoConRazas caballo in ListadoCaballosConListaRazas)
+
+            foreach (ClsCaballoConRazas caballo in ListadoCaballosConListaRazas)
             {
                 if(caballo.IdRaza != caballo.RazaSelected.IdRaza && caballo.RazaSelected.IdRaza != 0)
                 {
                     try
                     {
-                        numFilasAfectadas = ManejadoraBL.actualizarRazaCaballoBL(caballo.IdCaballo, caballo.RazaSelected.IdRaza);
+
+                        // Trabajando con la conexion a la Base de Datos
+                        var resultado = ManejadoraBL.actualizarListaRazaCaballoBL(caballo.IdCaballo, caballo.RazaSelected.IdRaza); //Devuelve una tupla
+                        listadoCaballos = resultado.Item2;
+                        numFilasAfectadas = resultado.Item1;
+
+                        
+                        // Trabajando con una lista en la capa DAL
+                        //numFilasAfectadas = ManejadoraBL.actualizarRazaCaballoBL(caballo.IdCaballo, caballo.RazaSelected.IdRaza); 
                     }
                     catch (Exception e)
                     {
@@ -83,15 +95,40 @@ namespace MAUI.ViewModels
                         filasTotalesafectadas++;
                     }
                 }
+
+            }
+ 
+
+            muestraMensajes("Operación realizada!",$"El número de filas afectadas es de: {filasTotalesafectadas}","Confirmar");
+
+
+            // ACTUALIZACIÓN DE LA LISTA QUE TENEMOS EN LA RAM
+
+            try
+            {
+                listadoRazas = ListadoClsRazaBL.ObtenerListaCompletaClsRazasBL();
+            }
+            catch (SqlException e)
+            {
+                muestraMensajes("Error", "Ha ocurrido un error inesperado, pruebelo más tarde.", "Entendido :(");
             }
 
-           await Shell.Current.DisplayAlert("Operación realizada!",$"El número de filas afectadas es de: {filasTotalesafectadas}","Confirmar");
-            //TODO: Actualizar la lista de ClsCaballos otra vez
+            ListadoCaballosConListaRazas.Clear();
+
+            foreach (ClsCaballo caballo in listadoCaballos)
+            {
+                ClsCaballoConRazas newCaballito = new ClsCaballoConRazas(caballo, listadoRazas);
+                ListadoCaballosConListaRazas.Add(newCaballito);
+            }
+            
+
         }
         #endregion
+        #region DisplayAlert function
         public async void muestraMensajes(String cabecera, String mensaje, String confirmacion)
         {
             await Shell.Current.DisplayAlert(cabecera, mensaje, confirmacion);
         }
+        #endregion
     }
 }
