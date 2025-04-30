@@ -159,28 +159,44 @@ namespace DAL
         private static Boolean comprobarExistenciaCombate(ClsCombate peleita)
         {
             Boolean existe = false;
-            List<ClsCombate> listaCombatesComprobar = new List<ClsCombate>();
-            ClsCombate? combateBuscado = new ClsCombate();
+            int numFilas = 0;
+
             try
             {
-                listaCombatesComprobar = DAL.ListadosCombatesDAL.obtenerListadoCombatesCompleto();
-                combateBuscado = listaCombatesComprobar.Find(pelea =>
-                ((pelea.IdCombatiente1 == peleita.IdCombatiente1) && (pelea.IdCombatiente2 == peleita.IdCombatiente2)) ||
-                ((pelea.IdCombatiente1 == peleita.IdCombatiente2) && (pelea.IdCombatiente2 == peleita.IdCombatiente1))
-                );
+                // ERROR AQUI EN LA COMPROBACION PARA HACER EN CASA
+                using (SqlConnection miConexion = ClsConexionBD.abrirConexion())
+                {
+                    using (SqlCommand miComando = new SqlCommand())
+                    {
+                        miComando.Connection = miConexion;
+                        miComando.CommandText = @"SELECT COUNT FROM Combate 
+                                              WHERE 
+                                              (IdCombatiente1 = @idCombatiente1 AND IdCombatiente2 = @idCombatiente2)
+                                              OR
+                                              (IdCombatiente1 = @idCombatiente2 AND IdCombatiente2 = @idCombatiente1);";
+
+                        miComando.Parameters.Add("@idCombatiente1", System.Data.SqlDbType.Int).Value = peleita.IdCombatiente1;
+                        miComando.Parameters.Add("@idCombatiente2", System.Data.SqlDbType.Int).Value = peleita.IdCombatiente2;
+
+                        numFilas = (int)miComando.ExecuteScalar();
+
+                    }
+                }
+
+                if (numFilas != 0)
+                {
+                    existe = true;
+                }
+
+                
             }
             catch (Exception ex)
             {
                 throw new Exception("Ha ocurrido un error en la comprobación", ex);
-            }
-            if (combateBuscado != null)
-            {
-                existe = true;
             }
 
             return existe;
         }
 
     }
-
 }
